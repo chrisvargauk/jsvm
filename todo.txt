@@ -1,0 +1,18 @@
+Todo:
+- IDE: Load/Save files
+  - File List Modal
+    - API read the list of files and provide them as JSON (This could be tuned to utils, cos used in several projects)
+    - Ability to select one or more files and feed back the result to where the Modal was launched from
+- Finish snake game
+- Documentation
+  - Make sure Code Quality is there than commit it to Github
+  - Write up the project in the README
+  - Write up the project to your Portfolio (Screenshots, Photoshop work and everything)
+  - Create Video
+    - Have a look through the code and take notes on what you want to talk about
+    - Write up what you want to talk about
+    - Make the video
+
+Other:
+- Install Verdaccio to have separate projects cooperate finally
+- Just get it out, then you are free to experiment further

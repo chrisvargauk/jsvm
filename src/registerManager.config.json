@@ -1,0 +1,7 @@
+{
+  "listRegisterName": [
+    "ip", "acc",
+    "r1", "r2",
+    "sp", "fp"
+  ]
+}

@@ -1,0 +1,13 @@
+
+
+my_subroutine:
+  alc 0x6f 'Hello world!'
+ret
+
+main:
+  phs 0x05
+  phs 0x06
+  phs 0x07
+  mov 0x01 $r1
+  cal my_subroutine: $r1
+end

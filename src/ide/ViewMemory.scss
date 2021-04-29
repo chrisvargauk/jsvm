@@ -1,0 +1,115 @@
+@import "util";
+
+.view-memory {
+  //overflow: auto;
+  width: 100%;
+  margin-left: -79px;
+  padding-left: 79px;
+  padding-right: 220px;
+  margin-right: -220px;
+
+  margin-bottom: 10px;
+
+  color: $color-font-default;
+  .ip {
+    color: $color-font-selected;
+  }
+
+  .panel {
+    //overflow: auto;
+    background: #292828;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    height: 450px;
+
+    & > .container {
+      height: 100%;
+
+      margin-top: -42px;
+      padding-top: 42px;
+
+      & > .scrollable {
+        padding: 10px;
+      }
+    }
+  }
+
+  .title {
+    font-family: system-ui;
+    color: $color-font-title;
+    font-weight: bold;
+    text-align: center;
+
+    padding: 10px;
+  }
+
+  .byte {
+    float: left;
+    width: 108px;
+    padding: 0 20px 10px 0;
+
+    font-family: monospace;
+    font-size: 16px;
+
+    .mark {
+      font-family: monospace;
+      font-weight: bold;
+      font-size: 12px;
+      height: 14px;
+
+      color: $color-font-selected;
+    }
+
+    .address {
+      font-size: 12px;
+    }
+
+    .value {
+      font-size: 40px;
+    }
+
+    .instruction-name {
+      height: 18px;
+      color: white;
+      font-size: 10px;
+    }
+
+    &.ip .instruction-name {
+      color: $color-font-selected;
+    }
+  }
+
+  button {
+    border: none;
+    color: #888787;
+    font-family: monospace;
+    font-size: 15px;
+    padding: 3px 7px;
+    cursor: pointer;
+
+    background: #292828;
+    &:hover{
+      background: #383838;
+    }
+  }
+
+  .scrollable {
+    overflow-y: scroll;
+    height: 100%;
+
+    &::-webkit-scrollbar-track {
+      //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
+      background-color: #292828;
+    }
+
+    &::-webkit-scrollbar {
+      width: 10px;
+      background-color: #242424;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #242424;
+    }
+  }
+}

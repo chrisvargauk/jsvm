@@ -1,0 +1,63 @@
+@import "util";
+
+.comp-editor {
+  //padding: 10px;
+
+  color: white;
+  font-family: monospace;
+  height: 100%;
+  width: 50%;
+  background: $color-background-default;
+
+  .title {
+    font-family: system-ui;
+    color: $color-font-title;
+    font-weight: bold;
+
+    padding: 10px;
+  }
+
+  .content {
+    height: 100%;
+    margin-top: -42px;
+    padding-top: 42px;
+
+    & > div {
+      float: left;
+    }
+  }
+
+  .line-number-list {
+    width: 50px;
+    height: 100%;
+    overflow: hidden;
+    color: $color-font-default;
+    padding-left: 10px;
+  }
+
+
+  #editor {
+    width: 100%;
+    height: 100%;
+    margin-left: -50px;
+    padding-left: 50px;
+
+    &:focus {
+      outline: 0px solid transparent;
+    }
+
+    //&::-webkit-scrollbar-track {
+    //  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
+    //  background-color: #292828;
+    //}
+    //
+    //&::-webkit-scrollbar {
+    //  width: 0px;
+    //  background-color: #292828;
+    //}
+    //
+    //&::-webkit-scrollbar-thumb {
+    //  background-color: #383838;
+    //}
+  }
+}

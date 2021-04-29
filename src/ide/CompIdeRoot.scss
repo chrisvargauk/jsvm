@@ -1,0 +1,70 @@
+@import "util";
+
+html, body {
+  overflow-y: hidden;
+  background: #323232;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  #ui-root {
+    height: 100%;
+  }
+}
+
+.comp-ide-root {
+  height: 100%;
+  overflow: hidden;
+
+  &>.head {
+    //background: $color-background-default;
+    color: $color-font-title;
+    padding: 0 0 6px 10px;
+    //margin: 0 0 10px 0;
+    font-weight: bold;
+    font-family: system-ui;
+  }
+
+  .btn-step {
+    font-family: verdana;
+    float: right;
+    cursor: pointer;
+  }
+
+  #area-editor-and-screen {
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 488px;
+    margin-bottom: -488px;
+  }
+
+  #area-debug {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+  }
+
+  .view-memory, .view-register-list, .comp-editor, #screen-wrapper {
+    float: left;
+  }
+
+  #screen-wrapper {
+    background: $color-background-default;
+    width: 50%;
+    height: 100%;
+
+    padding: 10px;
+
+    .title {
+      font-family: system-ui;
+      color: $color-font-title;
+      font-weight: bold;
+    }
+
+    .content {
+      margin-top: 10px;
+    }
+  }
+}
